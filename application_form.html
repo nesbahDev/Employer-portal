@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="images/favicon.png" rel="icon">
+    <title>Nisbah | Welcome</title>
+</head>
+<style>
+body{
+    background-color:  #2d1f53;
+    height: 170vh;
+}
+.container{
+    margin-top: 40px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+</style>
+<body>
+  <!--NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-white bg-white border-bottom ">
+      <div class="container-fluid px-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand mx-5" href="#">
+          <img src="https://github.com/nesbahDev/Frontend/blob/main/images/Final%20files-nesbah.png?raw=true" width="107px">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-dark">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="role_management.html"><i class="fa fa-thin fa-house"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Fixed Deposit</a></li>
+                <li><a class="dropdown-item" href="#">Credit Card</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="why_us.html">Why Us ?</a>
+            </li>
+          </ul>
+            <a class="btn btn-outline-primary shadow px-3" href="{% url 'login' %}" class="ml-2">Sign In</a>
+        </div>
+      </div>
+    </nav>
+    <!-- CARD APPLICATIOn-->
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    Contact Details
+                </div>
+                <div class="card-body">
+                    <form class="row g-3">
+                        <div class="col-6">
+                          <label for="inputcp" class="form-label">Contact Person</label>
+                          <input type="text" class="form-control" id="inputcp" placeholder="Enter Contact Person" required>
+                        </div>
+                        <div class="col-6">
+                            <label for="inputnumber" class="form-label">Mobile Number</label>
+                            <input type="text" class="form-control" id="inputnumber" placeholder="Enter Mobile Number" required>
+                          </div>
+                          <div class="col-6">
+                            <label for="inputposition" class="form-label">Position</label>
+                            <input type="text" class="form-control" id="inputposition" placeholder="Enter Position" required>
+                          </div>
+                          <div class="col-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Email Address" required>
+                            </div>
+                      </form>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        Corporate Information
+                    </div>
+                    <div class="card-body">
+                        <form class="row g-3">
+                            <div class="col-6">
+                              <label for="inputregion" class="form-label">Region(s) of operation</label>
+                              <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="inputservice" class="form-label">Required service from bank </label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputyear" class="form-label">Year(s) of business</label>
+                                <input type="text" class="form-control" id="inputyear" placeholder="Enter Year(s) of Business" required>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputsector" class="form-label">Sector</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputstaff" class="form-label">Number of staff</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputsaudistaff" class="form-label">No. Of Saudi Staff</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Enter No. of Saudi Staff" required>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputsalary" class="form-label">Average staff salary</label>
+                                <input type="text" class="form-control" id="inputsalary" placeholder="Enter Average Salary" required>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputbusiness" class="form-label">Business legal form</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputbusinesscapital" class="form-label">Business Capital</label>
+                                <select class="form-select" aria-label="Default select example">
+                                  <option selected>Open this select menu</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                              </div>
+                              <div class="col-6">
+                                <label for="inputbranches" class="form-label">Number of Branches</label>
+                                <input type="text" class="form-control" id="inputbranches" placeholder="Enter Number of Branches" required>
+                              </div>
+                              <div class="col-12">
+                                <label for="inputwebsite" class="form-label">Website</label>
+                                <input type="text" class="form-control" id="inputwebsite" placeholder="Enter Website Url" required>
+                              </div>
+                              <div class="col-12">
+                                <label for="inputnotes" class="form-label">Notes</label>
+                                <input type="text" class="form-control" id="inputnotes" placeholder="Enter Notes" required>
+                              </div>
+                              <div class="d-grid gap-2 col-6 mx-auto">
+                              <button type="submit" class="btn btn-primary btn-md" style="background-color: #9777e6 ;">Submit Application</button>
+                              </div>
+                          </form>
+                    </div>
+                  </div>
+                </div>
+    
+</body>
+</html>
